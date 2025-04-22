@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+:root {
+  /* Colors */
+  --bg-primary: #f07171;
+  --font-primary: #393939;
+  --font-secondary: #969696;
+  --font-secondary-desktop: rgba(0, 0, 0, 0.4);
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Line Height */
+  --line-height-desktop: 22px;
+}
+
+/* COMMON UTILITY CLASSES */
+/* Background */
+.bg-primary {
+  background-color: var(--bg-primary);
+}
+
+/* Text Colors & Weights */
+.text-primary {
+  color: var(--font-primary);
+}
+
+.text-secondary {
+  color: var(--font-secondary);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Bold & Normal Weights */
+.text-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.text-normal {
+  font-weight: var(--font-weight-normal);
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+}
+
+.btn-primary {
+  background-color: var(--bg-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  color: var(--font-primary);
+}
+
+@media (min-width: 768px) {
+  .text-secondary {
+    color: var(--font-secondary-desktop);
+    line-height: var(--line-height-desktop);
+  }
+}
+
+/* Utility classes for responsive display */
+.mobile-only {
+  display: block;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media screen and (min-width: 1052px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: flex;
+  }
+}

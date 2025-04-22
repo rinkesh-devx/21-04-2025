@@ -1,0 +1,49 @@
+.customers-feedback {
+  margin-top: 36.22px;
+  padding: 0 16px;
+}
+
+.customers-feedback-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 47px 66px;
+  margin: 47px 0 40px 0;
+}
+
+.customers-feedback .customers-feedback-card {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  max-width: 392px;
+  padding: 31px 21px;
+  background-color: #f6f6f6;
+}
+
+.customers-feedback .customer-feedback-heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.customers-feedback .customer-feedback-card-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .customers-feedback {
+    padding: 0 66px;
+  }
+  .customers-feedback .customer-feedback-heading {
+    font-size: 48px;
+  }
+
+  .customers-feedback .customers-feedback-card {
+    gap: 44px;
+    max-width: 392px;
+    padding: 48px 20px;
+    background-color: #f6f6f6;
+  }
+}
